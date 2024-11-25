@@ -1,0 +1,165 @@
+.body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculadora {
+    width: 800px;
+    padding: 4%;
+    height: 800px;
+    margin-top: 40px;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+    background-color: #0c2461;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.input {
+    font: inherit;
+    border: 0;
+    outline: 0;
+    border-radius: 5em;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 4px;
+    margin: 10px;
+    width: 60%;
+}
+
+.title2 {
+    margin-top: 20px;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.table {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.table thead {
+    background-color: black;
+    color: white;
+}
+
+.table td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.table td {
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    .body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .calculadora {
+        width: 100%;
+        max-width: 400px; 
+        padding: 5%;
+        height: auto; 
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #0c2461;
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
+    .title {
+        font-weight: bold;
+        margin-bottom: 20px; 
+        text-align: center; 
+    }
+    
+    .input {
+        font: inherit;
+        border: 0;
+        outline: 0;
+        border-radius: 5em;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 8px;
+        margin: 10px;
+        width: 100%; 
+        max-width: 250px; 
+    }
+    
+    .title2 {
+        margin-top: 15px; 
+        text-align: center; 
+    }
+    
+    .resultado {
+        margin-top: 20px;
+        font-size: 18px; 
+        text-align: center; 
+    }
+    
+    
+    .table {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .table thead {
+        background-color: black;
+        color: white;
+    }
+    
+    .table td, th {
+        padding: 8px;
+        border: 1px solid black;
+    }
+    
+    .table td {
+        background-color: white;
+        color: black;
+    }
+    
+    .calculadora {
+        padding: 4%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .table td, th {
+        padding: 6px; 
+    }
+
+    .title {
+        font-size: 1.2em; 
+    }
+
+    .resultado {
+        font-size: 16px; 
+    }
+}
