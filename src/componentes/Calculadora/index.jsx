@@ -16,6 +16,21 @@ function Calculadora() {
         }
     }, [altura, peso])
 
+    let classificacao = '';
+    if (imc < 18.5) {
+        classificacao = 'Abaixo do peso';
+    } else if (imc >= 18.5 && imc < 24.9) {
+        classificacao = 'Peso normal';
+    } else if (imc >= 25 && imc < 29.9) {
+        classificacao = 'Excesso de Peso';
+    } else if (imc >= 30 && imc < 34.9) {
+        classificacao = 'Obesidade grau 1';
+    } else if (imc >= 35 && imc < 39.9) {
+        classificacao = 'Obesidade grau 2';
+    } else {
+        classificacao = 'Obesidade grau 3';
+    }
+
     return (
         <div className={styles.body}>
             <div className={styles.calculadora}>
@@ -24,7 +39,7 @@ function Calculadora() {
                 <input className={styles.input} type="number" placeholder="peso kg" onChange={e => setPeso(parseInt(e.target.value))}/>
                 <h2 className={styles.title2}>Seu IMC é:</h2>
                 {imc !== null ? (
-                    <p className={styles.resultado}>{imc} kg/m2</p>
+                    <p className={styles.resultado}>{imc} kg/m2 -- {classificacao}</p>
                 ) : (
                     <p></p>
                 )}
